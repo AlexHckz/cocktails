@@ -26,10 +26,18 @@ body
   font-family: var(--font-family)
   color: var(--text-regular)
 
-//Utils
+//Layout
+.container
+  max-width: 1200px
+  display: block
+  margin: auto
+  padding: 20px
 
 .d-flex
   display: flex
+
+.flex-wrap
+  flex-wrap: wrap
 
 .flex-row
   flex-direction: row
@@ -52,11 +60,27 @@ body
 .flex-fill
   flex: 1 1 auto
 
+.flex-50
+  flex: 1 1 50%
+
+//Utils
 .p-10
   padding: 10px
 
 .p-20
   padding: 20px
+
+.pl-10
+  padding-left: 10px
+
+.pr-10
+  padding-right: 10px
+
+.pt-10
+  padding-top: 10px
+
+.pt-20
+  padding-top: 20px
 
 .m-10
   margin: 10px
@@ -64,8 +88,43 @@ body
 .m-20
   margin: 20px
 
-//debug
+.mb-20
+  margin-bottom: 20px
 
+//theme
+.list-primary
+  li
+    border: solid 1px var(--light-grey)
+    border-top: 0
+    padding: 10px 15px
+    &:hover
+      background-color: var(--secondary)
+      color: white
+      cursor: pointer
+      transition: 0.04s
+  :first-child
+    border-top: 1px solid var(--light-grey)
+    border-top-right-radius: 3px
+    border-top-left-radius: 3px
+  :last-child
+    border-bottom-right-radius: 3px
+    border-bottom-left-radius: 3px
+
+.btn
+  padding: 10px 15px
+  background-color: white
+  border: 0
+  border-radius: 3px
+  font-weight: 700
+  &-primary
+    background-color: var(--primary)
+    color: white
+    &:hover
+      background-color: var(--secondary)
+      cursor: pointer
+      transition: 0.04s
+
+//debug
 .d1
   border: 1px solid red
 
