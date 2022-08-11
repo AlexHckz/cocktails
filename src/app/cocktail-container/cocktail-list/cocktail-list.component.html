@@ -1,5 +1,8 @@
 <h3 class="mb-20">Liste des cocktails</h3>
 <ul class="mb-20 list-primary">
-  <li *ngFor="let cocktail of cocktails; let i = index" (click)="afficherCocktail(i)">{{cocktail.name}}</li>
+  <li [appSelected]="cocktail.name === selectedCocktail?.name" *ngFor="let cocktail of cocktails; let i = index"
+    (click)="afficherCocktail(i)">
+    {{cocktail.name}}
+  </li>
 </ul>
 <button class=" btn btn-primary">Ajouter</button>

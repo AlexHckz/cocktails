@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Cocktail } from 'src/app/interfaces/cocktail.interface';
+
+import { Cocktail } from 'src/app/shared/interfaces/cocktail.interface';
+import { ColorDirective } from 'src/app/color.directive';
 
 @Component({
   selector: 'app-cocktail-details',
