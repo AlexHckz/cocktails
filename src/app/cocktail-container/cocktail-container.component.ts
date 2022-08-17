@@ -35,6 +35,6 @@ export class CocktailContainerComponent implements OnInit, OnDestroy {
   }
 
   public afficherCocktail(i: number) {
-    this.cocktailService.afficherCocktail(i);
+    this.cocktailService.selectCocktail(i);
   }
 }
